@@ -1,5 +1,7 @@
-const tw = require('./tailwindMatcher');
+const tw = require('./index');
+
 const assert = require('assert').strict;
+const expect = require('expect.js');
 
 describe('Color matches', function () {
     it('Matches to blueGray-500', function () {
@@ -132,5 +134,17 @@ describe('Color matches', function () {
         expected = 'rose-500';
         actual = tw.tailwindMatcher('#f43f6d');
         assert.strictEqual(expected, actual);
+    });
+});
+
+describe('Wrong formatting', function () {
+    it('Hex is too long', function () {
+        expect(() => tw.tailwindMatcher('#f43f6dd2s')).to.throwError();
+    });
+    it('Hex is too short', function () {
+        expect(() => tw.tailwindMatcher('#f43f6s')).to.throwError();
+    });
+    it('Hex has no leading #', function () {
+        expect(() => tw.tailwindMatcher('f43fd6d')).to.throwError();
     });
 });

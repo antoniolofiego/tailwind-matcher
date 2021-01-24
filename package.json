@@ -1,6 +1,6 @@
 {
     "name": "tailwind-matcher",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "A utility function to match a hex color to the nearest Tailwind CSS 2.0 color.",
     "main": "index.js",
     "author": "Antonio Lo Fiego",
@@ -11,10 +11,11 @@
         "tailwindcss": "^2.0.2"
     },
     "devDependencies": {
+        "expect.js": "^0.3.1",
         "mocha": "^8.2.1"
     },
     "scripts": {
-        "test": "mocha tailwindMatcher.test.js"
+        "test": "mocha index.test.js"
     },
     "repository": {
         "type": "git",
