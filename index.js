@@ -9,7 +9,7 @@ const nearestColor = require('nearest-color').from(tailwindReference);
 
 // Checks if the hex color is correctly formatted and returns the closest match, otherwise throws an error.
 function tailwindMatcher(color) {
-    // Checks if the
+    // Checks if the provided color is a correct hex format (either #XXX or #XXXXXX)
     if (/^#([0-9A-F]{3}){1,2}$/i.test(color)) {
         return nearestColor(color).name;
     } else {
