@@ -13,7 +13,7 @@ $ npm install tailwind-matcher
 ```javascript
 import { tailwindMatcher } from 'tailwind-matcher';
 
-tailwindMatcher('#313232') # returns 'gray-800'
+tailwindMatcher('#313232') //returns 'gray-800'
 ```
 
 ## Contributing
