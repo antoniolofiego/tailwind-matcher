@@ -1,30 +1,30 @@
 {
-  "name": "@antoniolofiego/tailwind-matcher",
-  "version": "0.1.0",
-  "description": "A utility function to match a hex color to the nearest Tailwind CSS 2.0 color.",
-  "main": "index.js",
-  "author": "Antonio Lo Fiego",
-  "license": "MIT",
-  "dependencies": {
-    "flat": "^5.0.2",
-    "nearest-color": "^0.4.4",
-    "tailwindcss": "^2.0.2"
-  },
-  "devDependencies": {
-    "mocha": "^8.2.1"
-  },
-  "scripts": {
-    "test": "mocha tailwindMatcher.test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/antoniolofiego/tailwind-matcher.git"
-  },
-  "keywords": [
-    "tailwindcss"
-  ],
-  "bugs": {
-    "url": "https://github.com/antoniolofiego/tailwind-matcher/issues"
-  },
-  "homepage": "https://github.com/antoniolofiego/tailwind-matcher#readme"
+    "name": "tailwind-matcher",
+    "version": "0.1.0",
+    "description": "A utility function to match a hex color to the nearest Tailwind CSS 2.0 color.",
+    "main": "index.js",
+    "author": "Antonio Lo Fiego",
+    "license": "MIT",
+    "dependencies": {
+        "flat": "^5.0.2",
+        "nearest-color": "^0.4.4",
+        "tailwindcss": "^2.0.2"
+    },
+    "devDependencies": {
+        "mocha": "^8.2.1"
+    },
+    "scripts": {
+        "test": "mocha tailwindMatcher.test.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/antoniolofiego/tailwind-matcher.git"
+    },
+    "keywords": [
+        "tailwindcss"
+    ],
+    "bugs": {
+        "url": "https://github.com/antoniolofiego/tailwind-matcher/issues"
+    },
+    "homepage": "https://github.com/antoniolofiego/tailwind-matcher#readme"
 }
